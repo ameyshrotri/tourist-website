@@ -1,0 +1,390 @@
+@font-face{
+  src: url(../Abel-Regular.ttf);
+  font-family: abel;
+}
+html,body{
+    box-sizing: border-box;
+    margin: 0%;
+    padding: 0%;
+    background: #edf0f1;
+    background: url(../assets/simon.jpg);
+    scroll-behavior: smooth;
+    background-size: cover;
+    height: 110vh;
+    background-repeat: no-repeat;
+}
+/*-------------------Navigation-----------------*/
+li, a, button{
+    font-family: sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    color: #edf0f1;
+    text-decoration: none;
+}
+header{
+    opacity: 100%;
+    overflow: hidden;
+    top: 0%;
+    height: 50px;
+    width: 80%;
+    background: #000;
+    display: flex;
+    justify-content: space-between;
+    position: absolute;
+    align-items: center;
+    padding: 30px 10%;
+    font-family: abel;
+}
+.logo{
+    height: 100px;
+    width: 100px;
+    cursor: pointer;    
+}
+.nav_links{
+    font-family: abel;
+    list-style: none;
+}
+.nav_links li{
+    display: inline-block;
+    padding: 0px 20px;
+}
+.nav_links li a{
+    transition: all 0.3s ease 0s; 
+}
+.nav_links li a:hover{
+    color: #0088a9;
+}
+button{
+    padding: 9px 25px;
+    background-color: rgba(0,136,169,1);
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+}
+button:hover{
+    background-color: rgba(0,136,169,0.8);
+}
+/*------x------------Navigation--------x-----------*/
+/*-------------------Body------------------------*/
+
+h3 {
+    position: relative;
+    font-family: 'Kaushan Script', cursive;
+    padding-top: 4.5rem;
+    font-size: 1.3rem;
+    color: #0040ff;
+    margin: .3rem;
+}
+h1{
+    position: relative;
+    color: #0040ff;
+    font-size: 2.5rem;
+    margin: .3rem;
+    font-family: 'Kaushan Script', cursive;
+}
+.button{
+	position: absolute;
+	top: 50%;
+	left: 50%;
+    transform: translate(-50%,-50%);
+    padding-top: 3rem;
+}
+
+.btn{
+    border: none;
+    font-size: 1rem;
+    border-radius: 2rem;
+	padding: 1rem 3rem;
+    color: black;
+    font-family: sans-serif;
+    cursor: pointer;
+    background: #5794f5;
+	text-decoration: none;
+	transition: 0.6 ease
+}
+
+.btn:hover{
+    background-color: transparent;
+    color: white;
+    border: 1px solid white;
+}
+.container{
+    width: 1000px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.center{
+    display: block;
+    
+    padding-top: 45rem;
+    margin-left: auto;
+    margin-top: auto;
+    width: 60%;
+}
+
+.container{
+    width: 1000px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    transform-style: preserve-3d;
+}
+/*------------------Travel Box----------------*/
+.box{
+    position: relative;
+    left: 20%;
+    bottom: 150px;
+    width: 300px;
+    height: 400px;
+    background: #000;
+    box-shadow: 0 30px 30px rgba(0,0,0,.5);
+    transform-style: preserve-3d;
+}
+.box .imgBx{
+    position: absolute;
+    top: 0%;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+.box .imgBx img{
+    position: relative;
+    top: 0%;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: 0.5s;
+}
+.box:hover .imgBx img{
+    opacity: 0;
+}
+.box .content{
+    position: absolute;
+    bottom: 20px;
+    left: 10%;
+    width: 80%;
+    height: 60px;
+    background: #e6faff;
+    transition: 0.5s;
+    overflow: hidden;
+    padding: 15px;
+    box-sizing: border-box;
+    font-family: 'Kaushan Script', cursive;
+    transform-style: preserve-3d;
+}
+.box:hover .content{
+    width: 100%;
+    height: 100%;
+    bottom: 0;
+    left: 0;
+}
+.box .content h3{
+    margin: 0;
+    padding: 0;
+    font-size: 20px;
+}
+.box .content p{
+    margin: 10px 0 0;
+    padding: 0;
+    opacity: 0;
+    line-height: 1.2em;
+    transition: 0.5s;
+    text-align: justify;
+}
+.box:hover .content p{
+    opacity: 1;
+    transition-delay: 0.5s;
+
+}
+/*--------x------------Travel box---------x--------*/
+
+h2{
+    position: relative;
+    bottom: 600px;
+    left: 10%;
+    color: #ff0000;
+    padding-top: 0rem;
+    font-family: 'Kaushan Script', cursive;
+}
+h5{
+    position: relative;
+    left: 10%;
+    bottom: 600px;
+    color:#0040ff; rgba(9, 125, 172, 0.986);
+    font-size: 80px;
+    font-family: 'Kaushan Script', cursive;
+}
+h10{
+    position: relative;
+    left: 5%;
+    bottom: 850px;
+    color:#0040ff; rgba(9, 125, 172, 0.986);
+    font-size: 80px;
+    font-family: 'Kaushan Script', cursive;
+}
+.site-footer
+{
+  background-color:#26272b;
+  padding:45px 0 20px;
+  font-size:15px;
+  line-height:20px;
+  color:#737373;
+}
+.site-footer hr
+{
+  border-top-color:#bbb;
+  opacity:0.5
+}
+.site-footer hr.small
+{
+  margin:20px 0
+}
+.site-footer h6
+{
+  color:#fff;
+  font-size:16px;
+  text-transform:uppercase;
+  margin-top:5px;
+  letter-spacing:2px
+}
+.site-footer a
+{
+  color:#737373;
+}
+.site-footer a:hover
+{
+  color:#3366cc;
+  text-decoration:none;
+}
+.footer-links
+{
+  padding-left:0;
+  list-style:none
+}
+.footer-links li
+{
+  display:block
+}
+.footer-links a
+{
+  color:#737373
+}
+.footer-links a:active,.footer-links a:focus,.footer-links a:hover
+{
+  color:#3366cc;
+  text-decoration:none;
+}
+.footer-links.inline li
+{
+  display:inline-block
+}
+.site-footer .social-icons
+{
+  text-align:right
+}
+.site-footer .social-icons a
+{
+  width:40px;
+  height:40px;
+  line-height:40px;
+  margin-left:6px;
+  margin-right:0;
+  border-radius:100%;
+  background-color:#33353d
+}
+.copyright-text
+{
+  margin:0
+}
+@media (max-width:991px)
+{
+  .site-footer [class^=col-]
+  {
+    margin-bottom:30px
+  }
+}
+@media (max-width:767px)
+{
+  .site-footer
+  {
+    padding-bottom:0
+  }
+  .site-footer .copyright-text,.site-footer .social-icons
+  {
+    text-align:center
+  }
+}
+.social-icons
+{
+  padding-left:0;
+  margin-bottom:0;
+  list-style:none
+}
+.social-icons li
+{
+  display:inline-block;
+  margin-bottom:4px
+}
+.social-icons li.title
+{
+  margin-right:15px;
+  text-transform:uppercase;
+  color:#96a2b2;
+  font-weight:700;
+  font-size:13px
+}
+.social-icons a{
+  background-color:#eceeef;
+  color:#818a91;
+  font-size:16px;
+  display:inline-block;
+  line-height:44px;
+  width:44px;
+  height:44px;
+  text-align:center;
+  margin-right:8px;
+  border-radius:100%;
+  -webkit-transition:all .2s linear;
+  -o-transition:all .2s linear;
+  transition:all .2s linear
+}
+.social-icons a:active,.social-icons a:focus,.social-icons a:hover
+{
+  color:#fff;
+  background-color:#29aafe
+}
+.social-icons.size-sm a
+{
+  line-height:34px;
+  height:34px;
+  width:34px;
+  font-size:14px
+}
+.social-icons a.facebook:hover
+{
+  background-color:#3b5998
+}
+.social-icons a.twitter:hover
+{
+  background-color:#00aced
+}
+.social-icons a.linkedin:hover
+{
+  background-color:#007bb6
+}
+.social-icons a.dribbble:hover
+{
+  background-color:#ea4c89
+}
+@media (max-width:767px)
+{
+  .social-icons li.title
+  {
+    display:block;
+    margin-right:0;
+    font-weight:600
+  }
+}
